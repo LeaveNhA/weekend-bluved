@@ -50,8 +50,8 @@ const parse = data => {
 };
 
 export const render = ({ output }) => {
+    console.info("@Bluved:render:update!");
     const data = parse(output);
-    console.info("@Bluved:render:" + data);
     if (typeof data === "undefined") {
         return null;
     }
@@ -62,10 +62,9 @@ export const render = ({ output }) => {
             </div>
         );
     }
-    console.info("Re-freshed at " + data.windows.length);
-    if(data.windows.length)
+    if(data.windows.length > 0)
         return (
-            <div style={style}>
+            <div key="bluved-wrapper" style={style}>
               <style>{`
 .bluvved {
   background-color: rgba(255, 255, 255, 0.1);
@@ -80,7 +79,7 @@ export const render = ({ output }) => {
   width: calc(100% - (10px * 2 - 1.5px) * 1.5);
   height: calc(100% - 50px - 10px);
 }`}</style>
-              <div className="bluvved"></div>
+              <div key="bluved-content" className="bluvved"></div>
             </div>
         );
     else
