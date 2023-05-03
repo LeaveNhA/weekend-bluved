@@ -76,7 +76,7 @@ export const render = ({ output }) => {
   position: absolute;
   border-radius: 5px;
   top: 55px;
-  left: calc(10px * 2 + 1.5px);
+  left: calc(10px * 2 - 1.5px);
   width: calc(100% - (10px * 2 - 1.5px) * 1.5);
   height: calc(100% - 50px - 10px);
 }`}</style>
