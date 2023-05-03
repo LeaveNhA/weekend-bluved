@@ -25,6 +25,8 @@ There is no dependency for this widget.
 
 ### Refreshing yabai workspaces widget
 
+```shell
 # Bluved update!
 yabai -m signal --add event=display_changed \
     action="osascript -e 'tell application id \"tracesOf.Uebersicht\" to refresh widget id \"bluved-index-jsx\"'"
+```
