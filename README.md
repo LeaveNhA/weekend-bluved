@@ -1,4 +1,4 @@
-# [WeekEnd] Celestial Sky
+# [WeekEnd] BluevEd
 
 Simple, yet, powerfull widget to cover your back. No, seriously, it covers your applications background.
 
